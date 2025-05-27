@@ -2,6 +2,7 @@ body{
     background-color: #0d0d0d;
     font-family: "Inter", sans-serif;
     color: #f2f2f2;
+    transition: all 0.5s ease
 }
 .intro-div{
     display: flex;
@@ -12,7 +13,6 @@ body{
 }
 .intro-text{
     margin-left: 15px;
-    color: white;
 }
 .profile-img{
     height: 250px;
@@ -38,6 +38,7 @@ h2{
   color: #00ffe1;
   font-weight: 600;
 }
+
 @media (max-width: 768px) {
   .intro-div {
     flex-direction: column;
@@ -54,4 +55,28 @@ h2{
     padding: 0 20px;
   }
 
+}
+.light-mode{
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+.light-mode .profile-img{
+  border-color: black;
+}
+#mode-toggle{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  transition: all 0.3s;
+}
+#mode-toggle:hover{
+  font-size: 55px;
 }
